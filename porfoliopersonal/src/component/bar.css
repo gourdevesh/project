@@ -1,0 +1,39 @@
+.card{
+    background-color: hwb(134 56% 29%);
+    overflow: hidden;
+    position:relative;
+width: 100%;
+height: 100%; 
+display: flex;
+flex-direction: row;
+margin:1%;
+border-radius: 4%;
+justify-content: center;
+}
+.card-body{
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    right: 0%;
+position: absolute;;
+display:'flex';
+flex-direction: row;
+right: -100%;
+transition: 2s;
+backdrop-filter:blur(5px);
+color: #fff;
+
+}
+.card:hover .card-body{
+    right: 0;
+}
+.card:hover .card-image{
+ transform: scale(1.1);
+}
+.card-image{
+ 
+    width: 100%;
+    height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
